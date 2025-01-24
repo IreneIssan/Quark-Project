@@ -79,7 +79,7 @@
                     <p><strong>Day 7:</strong> Breakfast: Smoothie with kale, berries, and flaxseeds; Lunch: Tuna salad with mixed greens; Dinner: Baked salmon with roasted cauliflower.</p>
                 `;
             }
-            if (condition === "heartDisease") {
+            if (condition === "heartdisease") {
                 return `
                     <p><strong>Day 1:</strong> Breakfast: Oatmeal with flaxseeds and berries; Lunch: Grilled chicken with quinoa; Dinner: Steamed salmon with green beans.</p>
                     <p><strong>Day 2:</strong> Breakfast: Whole-grain toast with almond butter; Lunch: Lentil and spinach soup; Dinner: Grilled turkey with roasted vegetables.</p>
@@ -113,9 +113,61 @@
                      <p><strong>Day 7:</strong> Breakfast: Smoothie with spinach, banana, and iron-fortified milk; Lunch: Lentil stew with a side of whole-grain bread; Dinner: Baked chicken with roasted cauliflower.</p>
                 `;
             }
+            
+            if (condition === "cholesterol") {
+                return `
+                    <p><strong>Day 1:</strong> Breakfast: Oatmeal with flaxseeds and blueberries; Lunch: Grilled salmon with quinoa; Dinner: Steamed broccoli with baked chicken.</p>
+                    <p><strong>Day 2:</strong> Breakfast: Whole-grain toast with avocado; Lunch: Lentil soup with a side salad; Dinner: Grilled turkey with roasted vegetables.</p>
+                    <p><strong>Day 3:</strong> Breakfast: Smoothie with almond milk, spinach, and chia seeds; Lunch: Brown rice with stir-fried veggies; Dinner: Baked cod with sautéed kale.</p>
+                    <p><strong>Day 4:</strong> Breakfast: Greek yogurt with walnuts and fresh fruit; Lunch: Chickpea salad with olive oil dressing; Dinner: Grilled shrimp with steamed asparagus.</p>
+                    <p><strong>Day 5:</strong> Breakfast: Scrambled eggs with spinach; Lunch: Tuna salad with mixed greens; Dinner: Roasted chicken with sweet potatoes.</p>
+                    <p><strong>Day 6:</strong> Breakfast: Low-fat cottage cheese with sliced peaches; Lunch: Quinoa salad with roasted veggies; Dinner: Steamed fish with sautéed zucchini.</p>
+                    <p><strong>Day 7:</strong> Breakfast: Oatmeal with almonds and raisins; Lunch: Vegetable stir-fry with tofu; Dinner: Grilled turkey with steamed green beans.</p>
+                `;
+            }
 
-            return "<p>No specific diet plan available for this condition.</p>";
-        }
+            if (condition === "gallstones") {
+                return `
+                    <p><strong>Day 1:</strong> Breakfast: Smoothie with almond milk, spinach, and banana; Lunch: Brown rice with steamed veggies; Dinner: Baked chicken with broccoli.</p>
+                    <p><strong>Day 2:</strong> Breakfast: Oatmeal with apples and cinnamon; Lunch: Grilled fish with green beans; Dinner: Lentil soup with whole-grain bread.</p>
+                    <p><strong>Day 3:</strong> Breakfast: Low-fat yogurt with fresh fruit; Lunch: Quinoa with roasted vegetables; Dinner: Steamed cod with sautéed spinach.</p>
+                    <p><strong>Day 4:</strong> Breakfast: Scrambled eggs with tomatoes; Lunch: Vegetable soup with a side salad; Dinner: Grilled shrimp with roasted asparagus.</p>
+                    <p><strong>Day 5:</strong> Breakfast: Whole-grain toast with avocado and eggs; Lunch: Steamed tofu with stir-fried veggies; Dinner: Baked salmon with roasted sweet potatoes.</p>
+                    <p><strong>Day 6:</strong> Breakfast: Cottage cheese with sliced pears; Lunch: Lentil and spinach salad; Dinner: Roasted chicken breast with green beans.</p>
+                    <p><strong>Day 7:</strong> Breakfast: Smoothie with strawberries, kale, and almond milk; Lunch: Tuna salad with a side of whole-grain crackers; Dinner: Baked cod with roasted cauliflower.</p>
+                `;
+            }
+
+            if (condition === "urinaryInfection") {
+                return `
+                    <p><strong>Day 1:</strong> Breakfast: Cranberry smoothie with spinach and banana; Lunch: Grilled chicken salad with olive oil dressing; Dinner: Steamed fish with broccoli.</p>
+                    <p><strong>Day 2:</strong> Breakfast: Greek yogurt with fresh berries; Lunch: Brown rice with lentil curry; Dinner: Grilled turkey with roasted zucchini.</p>
+                    <p><strong>Day 3:</strong> Breakfast: Oatmeal with flaxseeds and apples; Lunch: Quinoa salad with cucumbers and tomatoes; Dinner: Steamed salmon with sautéed spinach.</p>
+                    <p><strong>Day 4:</strong> Breakfast: Smoothie with kale, orange juice, and pineapple; Lunch: Vegetable soup with a slice of whole-grain bread; Dinner: Grilled shrimp with steamed green beans.</p>
+                    <p><strong>Day 5:</strong> Breakfast: Whole-grain toast with almond butter; Lunch: Lentil and spinach salad; Dinner: Baked chicken breast with roasted carrots.</p>
+                    <p><strong>Day 6:</strong> Breakfast: Low-fat cottage cheese with pears; Lunch: Grilled tofu with stir-fried veggies; Dinner: Roasted turkey with mashed sweet potatoes.</p>
+                    <p><strong>Day 7:</strong> Breakfast: Smoothie with cranberries, strawberries, and almond milk; Lunch: Chickpea and avocado wrap; Dinner: Grilled salmon with sautéed kale.</p>
+                `;
+            }
+
+            if (condition === "migraine") {
+                return `
+                   <p><strong>Day 1:</strong> Breakfast: Oatmeal with fresh berries; Lunch: Grilled chicken salad with spinach; Dinner: Baked salmon with roasted sweet potatoes.</p>
+                   <p><strong>Day 2:</strong> Breakfast: Low-fat yogurt with sliced bananas; Lunch: Quinoa salad with cucumbers and olive oil dressing; Dinner: Roasted turkey with green beans.</p>
+                   <p><strong>Day 3:</strong> Breakfast: Smoothie with spinach, almond milk, and peaches; Lunch: Lentil soup with whole-grain bread; Dinner: Grilled shrimp with roasted asparagus.</p>
+                   <p><strong>Day 4:</strong> Breakfast: Whole-grain toast with avocado; Lunch: Brown rice with stir-fried veggies; Dinner: Baked cod with steamed broccoli.</p>
+                   <p><strong>Day 5:</strong> Breakfast: Cottage cheese with fresh fruit; Lunch: Chickpea and spinach salad; Dinner: Grilled chicken breast with roasted carrots.</p>
+                   <p><strong>Day 6:</strong> Breakfast: Scrambled eggs with diced tomatoes; Lunch: Vegetable soup with a side of crackers; Dinner: Steamed fish with sautéed spinach.</p>
+                   <p><strong>Day 7:</strong> Breakfast: Smoothie with kale, berries, and chia seeds; Lunch: Tuna salad with mixed greens; Dinner: Roasted salmon with sweet potatoes.</p>
+                `;
+            }
+
+    return "<p>No specific diet plan available for this condition.</p>";
+
+
+
+            
+}
 
         function generateHealthTips(condition) {
             if (condition === "diabetes") {
@@ -123,12 +175,37 @@
             }
             if (condition === "hypertension") {
                 return ["Reduce salt intake.", "Exercise regularly.", "Avoid smoking and alcohol."];
-            if (condition === "obesity") {
-
             }
+            if (condition === "obesity") {
+                return ["."];
+            }
+            if (condition === "heartdisease") {
+                return []
+            }
+            if (condition === "asthma") {
+                return[]
+            }
+            if (condition === "anemia") {
+                return[]
+            }
+            if (condition === "cholesterol") {
+                return[]
+            }
+            if (condition === "gallstones") {
+                return[]
+            }
+            if (condition === "urinaryInfection") {
+                return[]
+            }
+            if (condition === "migraine") {
+                return[]
             }
             return ["Maintain a healthy lifestyle and exercise regularly."];
+            
         }
+            
+    
+        
 
         function generateExercises(condition) {
             if (condition === "diabetes") {
@@ -136,6 +213,30 @@
             }
             if (condition === "hypertension") {
                 return ["Brisk walking", "Swimming", "Cycling"];
+            }
+            if (condition === "obesity") {
+                return [];
+            }
+            if (condition === "heartdisease") {
+                return [];
+            }
+            if (condition === "asthma") {
+                return [];
+            }
+            if (condition === "anemia") {
+                return [];
+            }
+            if (condition === "cholesterol") {
+                return [];
+            }
+            if (condition === "gallstones") {
+                return [];
+            }
+            if (condition === "urinaryInfection") {
+                return []; 
+            }
+            if (condition === "migraine") {
+                return [];
             }
             return ["Regular physical activity like jogging or aerobics."];
         }
