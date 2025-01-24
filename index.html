@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Care Input</h1>
+        <form id="healthForm">
+            <div class="input-box">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="input-box">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="healthCondition">Health Condition:</label>
+                <select id="healthCondition" name="healthCondition" required>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="hypertension">Hypertension</option>
+                    <option value="obesity">Obesity</option>
+                    <option value="heartDisease">Heart Disease</option>
+                    <option value="General Health">General Health</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("healthForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from submitting in the default way.
+
+            // Get form data
+            const age = document.getElementById("age").value;
+            const gender = document.getElementById("gender").value;
+            const healthCondition = document.getElementById("healthCondition").value;
+
+            // Save data to localStorage
+            localStorage.setItem("age", age);
+            localStorage.setItem("gender", gender);
+            localStorage.setItem("healthCondition", healthCondition);
+
+            // Redirect to nextpage.html
+            window.location.href = "nextpage.html";
+        });
+    </script>
+</body>
+</html>
+
+
