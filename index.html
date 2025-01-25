@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="download.jpeg" alt="">
+    <div class="background-container"></div> <!-- Background Image -->
     <div class="container">
-        <h1>Health Care Input</h1>
+        <h1>Health Care and Wellness</h1>
         <form id="healthForm">
             <div class="input-box">
                 <label for="age">Age:</label>
@@ -44,15 +44,16 @@
     </div>
 
     <script>
+        // Listen for form submission
         document.getElementById("healthForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form from submitting in the default way.
+            event.preventDefault();  // Prevent the form from submitting in the default way
 
             // Get form data
             const age = document.getElementById("age").value;
             const gender = document.getElementById("gender").value;
             const healthCondition = document.getElementById("healthCondition").value;
 
-            // Save data to localStorage
+            // Store data in localStorage (optional, if you want to persist the data across pages)
             localStorage.setItem("age", age);
             localStorage.setItem("gender", gender);
             localStorage.setItem("healthCondition", healthCondition);
@@ -63,5 +64,8 @@
     </script>
 </body>
 </html>
+
+
+
 
 
