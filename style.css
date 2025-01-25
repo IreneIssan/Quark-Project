@@ -4,145 +4,108 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif; /* Clean and modern font */
-    background-color: #e8f5e9; /* Light green background for freshness */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
+
+
+.background-container {
+    position: fixed; /* Fixes the container to the viewport */
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps it behind other elements */
+    background-image: url('background.jpg'); /* Your background image */
+    background-size: cover; /* Ensures the image covers the screen proportionally */
+    background-position: center; /* Centers the image on the screen */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+
 
 .container {
-    background: linear-gradient(to bottom right, #ffffff, #daf5d7); /* Subtle white to light green gradient */
-    padding: 50px; /* Generous padding for clean spacing */
-    border-radius: 25px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-    width: 700px; /* Optimized size */
+    background-color: rgba(210, 180, 140, 0.9); /* Light brown with slight transparency */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
     max-width: 90%;
-    border: 2px solid #a5d6a7; /* Soft green border for emphasis */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80%; /* Limit the container height */
+    overflow-y: auto; /* Allow scrolling inside the container */
 }
+
 
 h1 {
-    text-align: center;
-    color: #388e3c; /* Calming green for health and wellness */
-    font-weight: 700;
-    font-size: 32px; /* Decent size for the title */
-    margin-bottom: 30px;
+    color: #4e342e; /* Earthy brown color */
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
+
 .input-box {
-    margin: 30px 0; /* Spacing between input fields */
+    margin: 20px 0;
+    text-align: left;
 }
+
 
 .input-box label {
     display: block;
-    font-size: 20px; /* Decent label font size */
-    margin-bottom: 10px; /* Better spacing below labels */
-    color: #4e342e; /* Earthy brown tone for labels */
-    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #3e2723; /* Darker brown */
 }
+
 
 .input-box input, .input-box select {
     width: 100%;
-    padding: 16px; /* Comfortable padding for inputs */
-    font-size: 18px; /* Larger input font size */
-    border-radius: 12px;
-    border: 1.5px solid #ccc;
-    background-color: #f9f9f9;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 5px;
     transition: border-color 0.3s;
 }
 
+
 .input-box input:focus, .input-box select:focus {
-    border-color: #388e3c; /* Focus green highlight */
+    border-color: #6d4c41; /* Brown highlight */
     outline: none;
 }
 
+
 button {
     width: 100%;
-    padding: 16px;
-    font-size: 20px; /* Decent button font size */
-    font-weight: bold;
-    background: linear-gradient(to right, #388e3c, #81c784); /* Soft green gradient */
+    padding: 12px;
+    font-size: 18px;
+    background-color: #6d4c41; /* Rich brown color */
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: 25px;
+    transition: background-color 0.3s;
 }
+
 
 button:hover {
-    background: linear-gradient(to right, #81c784, #388e3c); /* Reversed gradient for hover effect */
+    background-color: #4e342e; /* Darker brown on hover */
 }
 
-.output-container {
-    display: none;
-    background: linear-gradient(to bottom left, #ffffff, #e1f5fe); /* White and light blue gradient */
-    margin-top: 50px; /* Generous space above the output */
-    padding: 50px;
-    border-radius: 25px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-    width: 850px; /* Larger width for detailed output */
-    max-width: 95%;
-    border: 2px solid #bbdefb; /* Light blue border for wellness theme */
-}
 
-.output-container h2 {
-    text-align: center;
-    color: #1565c0; /* Deep blue for titles */
-    font-size: 32px; /* Larger font size for titles */
-    font-weight: bold;
-    margin-bottom: 30px;
-}
 
-.output-container p {
-    font-size: 22px; /* Larger font size for output text */
-    color: #333; /* Dark text for readability */
-    line-height: 1.8;
-    margin-bottom: 25px;
-    background: #f1f8e9; /* Light green section background */
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #81c784;
-}
 
-.output-container .meal {
-    background-color: #e3f2fd; /* Light blue for meals */
-    font-size: 22px; /* Larger text for meals */
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 25px;
-    border: 1px solid #64b5f6;
-}
 
-@media screen and (max-width: 768px) {
-    .container, .output-container {
-        width: 100%;
-        padding: 30px;
-    }
 
-    h1 {
-        font-size: 28px;
-    }
 
-    button {
-        font-size: 18px;
-    }
 
-    .output-container h2 {
-        font-size: 26px;
-    }
 
-    .output-container p {
-        font-size: 20px;
-    }
-
-    .output-container .meal {
-        font-size: 20px;
-    }
-}
 
 
 
