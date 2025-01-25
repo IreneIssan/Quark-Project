@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Your Personalized Health Plan</h1>
+        <h1>Your Health Plan</h1>
         <div id="output">
             <!-- Content will be dynamically generated -->
         </div>
@@ -48,74 +48,244 @@
         function generateDietPlan(condition) {
             if (condition === "diabetes") {
                 return `
-                    <p><strong>Day 1:</strong> Breakfast: Oatmeal with nuts; Lunch: Grilled chicken salad; Dinner: Steamed fish with veggies.</p>
-                    <p><strong>Day 2:</strong> Breakfast: Scrambled eggs; Lunch: Veggie wrap; Dinner: Baked salmon with quinoa.</p>
-                    <p><strong>Day 3:</strong> Breakfast: Greek yogurt with berries; Lunch: Lentil soup with whole-grain bread; Dinner: Grilled salmon with sautéed zucchini.</p>
-                    <p><strong>Day 4:</strong> Breakfast: Smoothie with almond milk, spinach, and chia seeds; Lunch: Brown rice with stir-fried vegetables; Dinner: Baked chicken breast with green beans.</p>
-                    <p><strong>Day 5:</strong> Breakfast: Whole-grain toast with avocado; Lunch: Tuna salad with mixed greens; Dinner: Grilled shrimp with quinoa and steamed broccoli.</p>
-                    <p><strong>Day 6:</strong> Breakfast: Scrambled eggs with tomatoes; Lunch: Grilled turkey wrap with fresh veggies; Dinner: Roasted cauliflower with baked cod.</p>
-                    <p><strong>Day 7:</strong> Breakfast: Cottage cheese with sliced peaches; Lunch: Vegetable soup with a side of whole-grain crackers; Dinner: Grilled chicken with roasted sweet potatoes.</p>
+                    <p><strong>Day 1:</strong></p>
+<p>Breakfast: Oatmeal with nuts</p>
+<p>Lunch: Grilled chicken salad</p>
+<p>Dinner: Steamed fish with veggies</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Scrambled eggs</p>
+<p>Lunch: Veggie wrap</p>
+<p>Dinner: Baked salmon with quinoa</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Greek yogurt with berries</p>
+<p>Lunch: Lentil soup with whole-grain bread</p>
+<p>Dinner: Grilled salmon with sautéed zucchini</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Smoothie with almond milk, spinach, and chia seeds</p>
+<p>Lunch: Brown rice with stir-fried vegetables</p>
+<p>Dinner: Baked chicken breast with green beans</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Whole-grain toast with avocado</p>
+<p>Lunch: Tuna salad with mixed greens</p>
+<p>Dinner: Grilled shrimp with quinoa and steamed broccoli</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Scrambled eggs with tomatoes</p>
+<p>Lunch: Grilled turkey wrap with fresh veggies</p>
+<p>Dinner: Roasted cauliflower with baked cod</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Cottage cheese with sliced peaches</p>
+<p>Lunch: Vegetable soup with a side of whole-grain crackers</p>
+<p>Dinner: Grilled chicken with roasted sweet potatoes</p>
+
                 `;
             }
             if (condition === "hypertension") {
                 return `
-                    <p><strong>Day 1:</strong> Breakfast: Whole grain toast with avocado; Lunch: Grilled fish with broccoli; Dinner: Lentil soup.</p>
-                    <p><strong>Day 2:</strong> Breakfast: Spinach smoothie; Lunch: Chicken stir fry; Dinner: Sweet potato and beans.</p>
-                    <p><strong>Day 3:</strong> Breakfast: Smoothie with bananas, spinach, and almond milk; Lunch: Turkey and avocado wrap; Dinner: Grilled chicken breast with sautéed kale.</p>
-                    <p><strong>Day 4:</strong> Breakfast: Low-fat yogurt with fresh berries; Lunch: Brown rice with stir-fried tofu; Dinner: Roasted turkey with mashed sweet potatoes.</p>
-                    <p><strong>Day 5:</strong> Breakfast: Scrambled eggs with diced tomatoes; Lunch: Lentil and spinach soup; Dinner: Steamed cod with a side of roasted vegetables.</p>
-                    <p><strong>Day 6:</strong> Breakfast: Whole-grain cereal with almond milk; Lunch: Grilled vegetable wrap; Dinner: Grilled chicken with quinoa and sautéed spinach.</p>
-                    <p><strong>Day 7:</strong> Breakfast: Smoothie with berries, kale, and chia seeds; Lunch: Salmon and avocado salad; Dinner: Roasted cauliflower with baked chicken.</p>
+                   <p><strong>Day 1:</strong></p>
+<p>Breakfast: Whole grain toast with avocado</p>
+<p>Lunch: Grilled fish with broccoli</p>
+<p>Dinner: Lentil soup</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Spinach smoothie</p>
+<p>Lunch: Chicken stir fry</p>
+<p>Dinner: Sweet potato and beans</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Smoothie with bananas, spinach, and almond milk</p>
+<p>Lunch: Turkey and avocado wrap</p>
+<p>Dinner: Grilled chicken breast with sautéed kale</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Low-fat yogurt with fresh berries</p>
+<p>Lunch: Brown rice with stir-fried tofu</p>
+<p>Dinner: Roasted turkey with mashed sweet potatoes</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Scrambled eggs with diced tomatoes</p>
+<p>Lunch: Lentil and spinach soup</p>
+<p>Dinner: Steamed cod with a side of roasted vegetables</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Whole-grain cereal with almond milk</p>
+<p>Lunch: Grilled vegetable wrap</p>
+<p>Dinner: Grilled chicken with quinoa and sautéed spinach</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Smoothie with berries, kale, and chia seeds</p>
+<p>Lunch: Salmon and avocado salad</p>
+<p>Dinner: Roasted cauliflower with baked chicken</p>
+
                 `;
             }
             if (condition === "obesity") {
                 return `
-                    <p><strong>Day 1:</strong> Breakfast: Greek yogurt with granola; Lunch: Grilled chicken salad with olive oil dressing; Dinner: Baked salmon with steamed broccoli.</p>
-                    <p><strong>Day 2:</strong> Breakfast: Scrambled eggs with mixed veggies; Lunch: Quinoa with chickpeas and roasted vegetables; Dinner: Grilled turkey with mashed cauliflower.</p>
-                    <p><strong>Day 3:</strong> Breakfast: Smoothie with spinach, banana, and almond milk; Lunch: Grilled fish with brown rice; Dinner: Baked chicken breast with asparagus.</p>
-                    <p><strong>Day 4:</strong> Breakfast: Whole-grain toast with avocado and eggs; Lunch: Lentil soup with a side salad; Dinner: Steamed fish with roasted sweet potatoes.</p>
-                    <p><strong>Day 5:</strong> Breakfast: Low-fat cottage cheese with fruit; Lunch: Grilled shrimp salad; Dinner: Baked cod with sautéed spinach.</p>
-                    <p><strong>Day 6:</strong> Breakfast: Oatmeal with nuts and berries; Lunch: Chicken and vegetable stir-fry; Dinner: Grilled turkey with quinoa and steamed veggies.</p>
-                    <p><strong>Day 7:</strong> Breakfast: Smoothie with kale, berries, and flaxseeds; Lunch: Tuna salad with mixed greens; Dinner: Baked salmon with roasted cauliflower.</p>
+                    <p><strong>Day 1:</strong></p>
+<p>Breakfast: Greek yogurt with granola</p>
+<p>Lunch: Grilled chicken salad with olive oil dressing</p>
+<p>Dinner: Baked salmon with steamed broccoli</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Scrambled eggs with mixed veggies</p>
+<p>Lunch: Quinoa with chickpeas and roasted vegetables</p>
+<p>Dinner: Grilled turkey with mashed cauliflower</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Smoothie with spinach, banana, and almond milk</p>
+<p>Lunch: Grilled fish with brown rice</p>
+<p>Dinner: Baked chicken breast with asparagus</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Whole-grain toast with avocado and eggs</p>
+<p>Lunch: Lentil soup with a side salad</p>
+<p>Dinner: Steamed fish with roasted sweet potatoes</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Low-fat cottage cheese with fruit</p>
+<p>Lunch: Grilled shrimp salad</p>
+<p>Dinner: Baked cod with sautéed spinach</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Oatmeal with nuts and berries</p>
+<p>Lunch: Chicken and vegetable stir-fry</p>
+<p>Dinner: Grilled turkey with quinoa and steamed veggies</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Smoothie with kale, berries, and flaxseeds</p>
+<p>Lunch: Tuna salad with mixed greens</p>
+<p>Dinner: Baked salmon with roasted cauliflower</p>
+
                 `;
             }
             if (condition === "heartdisease") {
                 return `
-                    <p><strong>Day 1:</strong> Breakfast: Oatmeal with flaxseeds and berries; Lunch: Grilled chicken with quinoa; Dinner: Steamed salmon with green beans.</p>
-                    <p><strong>Day 2:</strong> Breakfast: Whole-grain toast with almond butter; Lunch: Lentil and spinach soup; Dinner: Grilled turkey with roasted vegetables.</p>
-                    <p><strong>Day 3:</strong> Breakfast: Smoothie with spinach, banana, and chia seeds; Lunch: Brown rice with baked fish; Dinner: Steamed broccoli with grilled chicken.</p>
-                    <p><strong>Day 4:</strong> Breakfast: Scrambled eggs with tomatoes; Lunch: Quinoa salad with avocado; Dinner: Baked cod with sautéed zucchini.</p>
-                    <p><strong>Day 5:</strong> Breakfast: Low-fat yogurt with walnuts and fresh fruit; Lunch: Chickpea salad with olive oil dressing; Dinner: Grilled shrimp with asparagus.</p>
-                    <p><strong>Day 6:</strong> Breakfast: Whole-grain cereal with almond milk; Lunch: Steamed fish with a side of kale; Dinner: Grilled turkey with roasted sweet potatoes.</p>
-                    <p><strong>Day 7:</strong> Breakfast: Smoothie with oats, strawberries, and almond milk; Lunch: Vegetable stir-fry with tofu; Dinner: Baked salmon with roasted carrots.</p>
+                   <p><strong>Day 1:</strong></p>
+<p>Breakfast: Oatmeal with flaxseeds and berries</p>
+<p>Lunch: Grilled chicken with quinoa</p>
+<p>Dinner: Steamed salmon with green beans</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Whole-grain toast with almond butter</p>
+<p>Lunch: Lentil and spinach soup</p>
+<p>Dinner: Grilled turkey with roasted vegetables</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Smoothie with spinach, banana, and chia seeds</p>
+<p>Lunch: Brown rice with baked fish</p>
+<p>Dinner: Steamed broccoli with grilled chicken</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Scrambled eggs with tomatoes</p>
+<p>Lunch: Quinoa salad with avocado</p>
+<p>Dinner: Baked cod with sautéed zucchini</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Low-fat yogurt with walnuts and fresh fruit</p>
+<p>Lunch: Chickpea salad with olive oil dressing</p>
+<p>Dinner: Grilled shrimp with asparagus</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Whole-grain cereal with almond milk</p>
+<p>Lunch: Steamed fish with a side of kale</p>
+<p>Dinner: Grilled turkey with roasted sweet potatoes</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Smoothie with oats, strawberries, and almond milk</p>
+<p>Lunch: Vegetable stir-fry with tofu</p>
+<p>Dinner: Baked salmon with roasted carrots</p>
+
                 `;
             }
             if (condition === "asthma") {
                 return `
-                    <p><strong>Day 1:</strong> Breakfast: Spinach and banana smoothie; Lunch: Grilled chicken with brown rice; Dinner: Steamed fish with carrots and peas.</p>
-                    <p><strong>Day 2:</strong> Breakfast: Oatmeal with cinnamon and apples; Lunch: Lentil soup with whole-grain bread; Dinner: Roasted turkey with green beans.</p>
-                    <p><strong>Day 3:</strong> Breakfast: Greek yogurt with fresh fruit; Lunch: Quinoa salad with vegetables; Dinner: Grilled salmon with roasted zucchini.</p>
-                    <p><strong>Day 4:</strong> Breakfast: Whole-grain toast with avocado and eggs; Lunch: Stir-fried chicken with broccoli; Dinner: Baked cod with steamed spinach.</p>
-                    <p><strong>Day 5:</strong> Breakfast: Low-fat cottage cheese with pineapple; Lunch: Tuna salad with olive oil dressing; Dinner: Grilled shrimp with brown rice.</p>
-                    <p><strong>Day 6:</strong> Breakfast: Scrambled eggs with tomatoes; Lunch: Chickpea and kale salad; Dinner: Roasted chicken with baked sweet potatoes.</p>
-                    <p><strong>Day 7:</strong> Breakfast: Smoothie with berries, spinach, and almond milk; Lunch: Grilled fish with quinoa; Dinner: Lentil stew with roasted vegetables.</p>
+                    <p><strong>Day 1:</strong></p>
+<p>Breakfast: Spinach and banana smoothie</p>
+<p>Lunch: Grilled chicken with brown rice</p>
+<p>Dinner: Steamed fish with carrots and peas</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Oatmeal with cinnamon and apples</p>
+<p>Lunch: Lentil soup with whole-grain bread</p>
+<p>Dinner: Roasted turkey with green beans</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Greek yogurt with fresh fruit</p>
+<p>Lunch: Quinoa salad with vegetables</p>
+<p>Dinner: Grilled salmon with roasted zucchini</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Whole-grain toast with avocado and eggs</p>
+<p>Lunch: Stir-fried chicken with broccoli</p>
+<p>Dinner: Baked cod with steamed spinach</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Low-fat cottage cheese with pineapple</p>
+<p>Lunch: Tuna salad with olive oil dressing</p>
+<p>Dinner: Grilled shrimp with brown rice</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Scrambled eggs with tomatoes</p>
+<p>Lunch: Chickpea and kale salad</p>
+<p>Dinner: Roasted chicken with baked sweet potatoes</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Smoothie with berries, spinach, and almond milk</p>
+<p>Lunch: Grilled fish with quinoa</p>
+<p>Dinner: Lentil stew with roasted vegetables</p>
+
+                    
                 `;
             }
 
             if (condition === "anemia") {
                 return `
-                     <p><strong>Day 1:</strong> Breakfast: Iron-fortified cereal with milk; Lunch: Lentil soup with whole-grain bread; Dinner: Grilled chicken with spinach salad.</p>
-                     <p><strong>Day 2:</strong> Breakfast: Smoothie with kale, strawberries, and orange juice; Lunch: Quinoa salad with roasted vegetables; Dinner: Baked salmon with sautéed spinach.</p>
-                     <p><strong>Day 3:</strong> Breakfast: Scrambled eggs with tomatoes and spinach; Lunch: Chickpea and avocado wrap; Dinner: Grilled beef with roasted sweet potatoes.</p>
-                     <p><strong>Day 4:</strong> Breakfast: Whole-grain toast with almond butter; Lunch: Lentil and spinach salad; Dinner: Grilled turkey with steamed kale.</p>
-                     <p><strong>Day 5:</strong> Breakfast: Greek yogurt with fresh fruit; Lunch: Brown rice with stir-fried tofu; Dinner: Roasted chicken with green beans.</p>
-                     <p><strong>Day 6:</strong> Breakfast: Oatmeal with raisins and nuts; Lunch: Grilled shrimp salad; Dinner: Steamed fish with carrots and broccoli.</p>
-                     <p><strong>Day 7:</strong> Breakfast: Smoothie with spinach, banana, and iron-fortified milk; Lunch: Lentil stew with a side of whole-grain bread; Dinner: Baked chicken with roasted cauliflower.</p>
+                     <p><strong>Day 1:</strong></p>
+<p>Breakfast: Iron-fortified cereal with milk</p>
+<p>Lunch: Lentil soup with whole-grain bread</p>
+<p>Dinner: Grilled chicken with spinach salad</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Smoothie with kale, strawberries, and orange juice</p>
+<p>Lunch: Quinoa salad with roasted vegetables</p>
+<p>Dinner: Baked salmon with sautéed spinach</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Scrambled eggs with tomatoes and spinach</p>
+<p>Lunch: Chickpea and avocado wrap</p>
+<p>Dinner: Grilled beef with roasted sweet potatoes</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Whole-grain toast with almond butter</p>
+<p>Lunch: Lentil and spinach salad</p>
+<p>Dinner: Grilled turkey with steamed kale</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Greek yogurt with fresh fruit</p>
+<p>Lunch: Brown rice with stir-fried tofu</p>
+<p>Dinner: Roasted chicken with green beans</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Oatmeal with raisins and nuts</p>
+<p>Lunch: Grilled shrimp salad</p>
+<p>Dinner: Steamed fish with carrots and broccoli</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Smoothie with spinach, banana, and iron-fortified milk</p>
+<p>Lunch: Lentil stew with a side of whole-grain bread</p>
+<p>Dinner: Baked chicken with roasted cauliflower</p>
+
                 `;
             }
             
             if (condition === "cholesterol") {
                 return `
+<<<<<<< HEAD
                     <p><strong>Day 1:
                         </strong> Breakfast: Oatmeal with flaxseeds and blueberries; Lunch: Grilled salmon with quinoa; Dinner: Steamed broccoli with baked chicken.</p>
                     <p><strong>Day 2:
@@ -130,42 +300,163 @@
                         </strong> Breakfast: Low-fat cottage cheese with sliced peaches; Lunch: Quinoa salad with roasted veggies; Dinner: Steamed fish with sautéed zucchini.</p>
                     <p><strong>Day 7:
                         </strong> Breakfast: Oatmeal with almonds and raisins; Lunch: Vegetable stir-fry with tofu; Dinner: Grilled turkey with steamed green beans.</p>
+=======
+                   <p><strong>Day 1:</strong></p>
+<p>Breakfast: Oatmeal with flaxseeds and blueberries</p>
+<p>Lunch: Grilled salmon with quinoa</p>
+<p>Dinner: Steamed broccoli with baked chicken</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Whole-grain toast with avocado</p>
+<p>Lunch: Lentil soup with a side salad</p>
+<p>Dinner: Grilled turkey with roasted vegetables</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Smoothie with almond milk, spinach, and chia seeds</p>
+<p>Lunch: Brown rice with stir-fried veggies</p>
+<p>Dinner: Baked cod with sautéed kale</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Greek yogurt with walnuts and fresh fruit</p>
+<p>Lunch: Chickpea salad with olive oil dressing</p>
+<p>Dinner: Grilled shrimp with steamed asparagus</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Scrambled eggs with spinach</p>
+<p>Lunch: Tuna salad with mixed greens</p>
+<p>Dinner: Roasted chicken with sweet potatoes</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Low-fat cottage cheese with sliced peaches</p>
+<p>Lunch: Quinoa salad with roasted veggies</p>
+<p>Dinner: Steamed fish with sautéed zucchini</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Oatmeal with almonds and raisins</p>
+<p>Lunch: Vegetables with tofu</p>
+<p>Dinner: Grilled turkey with steamed green beans</p>
+
+>>>>>>> a94ee4241e5033613ea2e70ed2ab01c6bce14429
                 `;
             }
 
             if (condition === "gallstones") {
                 return `
-                    <p><strong>Day 1:</strong> Breakfast: Smoothie with almond milk, spinach, and banana; Lunch: Brown rice with steamed veggies; Dinner: Baked chicken with broccoli.</p>
-                    <p><strong>Day 2:</strong> Breakfast: Oatmeal with apples and cinnamon; Lunch: Grilled fish with green beans; Dinner: Lentil soup with whole-grain bread.</p>
-                    <p><strong>Day 3:</strong> Breakfast: Low-fat yogurt with fresh fruit; Lunch: Quinoa with roasted vegetables; Dinner: Steamed cod with sautéed spinach.</p>
-                    <p><strong>Day 4:</strong> Breakfast: Scrambled eggs with tomatoes; Lunch: Vegetable soup with a side salad; Dinner: Grilled shrimp with roasted asparagus.</p>
-                    <p><strong>Day 5:</strong> Breakfast: Whole-grain toast with avocado and eggs; Lunch: Steamed tofu with stir-fried veggies; Dinner: Baked salmon with roasted sweet potatoes.</p>
-                    <p><strong>Day 6:</strong> Breakfast: Cottage cheese with sliced pears; Lunch: Lentil and spinach salad; Dinner: Roasted chicken breast with green beans.</p>
-                    <p><strong>Day 7:</strong> Breakfast: Smoothie with strawberries, kale, and almond milk; Lunch: Tuna salad with a side of whole-grain crackers; Dinner: Baked cod with roasted cauliflower.</p>
+                    <p><strong>Day 1:</strong></p>
+<p>Breakfast: Smoothie with almond milk, spinach, and banana</p>
+<p>Lunch: Brown rice with steamed veggies</p>
+<p>Dinner: Baked chicken with broccoli</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Oatmeal with apples and cinnamon</p>
+<p>Lunch: Grilled fish with green beans</p>
+<p>Dinner: Lentil soup with whole-grain bread</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Low-fat yogurt with fresh fruit</p>
+<p>Lunch: Quinoa with roasted vegetables</p>
+<p>Dinner: Steamed cod with sautéed spinach</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Scrambled eggs with tomatoes</p>
+<p>Lunch: Vegetable soup with a side salad</p>
+<p>Dinner: Grilled shrimp with roasted asparagus</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Whole-grain toast with avocado and eggs</p>
+<p>Lunch: Steamed tofu with stir-fried veggies</p>
+<p>Dinner: Baked salmon with roasted sweet potatoes</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Cottage cheese with sliced pears</p>
+<p>Lunch: Lentil and spinach salad</p>
+<p>Dinner: Roasted chicken breast with green beans</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Smoothie with strawberries, kale, and almond milk</p>
+<p>Lunch: Tuna salad with a side of whole-grain crackers</p>
+<p>Dinner: Baked cod with roasted cauliflower</p>
+
                 `;
             }
 
             if (condition === "urinaryInfection") {
                 return `
-                    <p><strong>Day 1:</strong> Breakfast: Cranberry smoothie with spinach and banana; Lunch: Grilled chicken salad with olive oil dressing; Dinner: Steamed fish with broccoli.</p>
-                    <p><strong>Day 2:</strong> Breakfast: Greek yogurt with fresh berries; Lunch: Brown rice with lentil curry; Dinner: Grilled turkey with roasted zucchini.</p>
-                    <p><strong>Day 3:</strong> Breakfast: Oatmeal with flaxseeds and apples; Lunch: Quinoa salad with cucumbers and tomatoes; Dinner: Steamed salmon with sautéed spinach.</p>
-                    <p><strong>Day 4:</strong> Breakfast: Smoothie with kale, orange juice, and pineapple; Lunch: Vegetable soup with a slice of whole-grain bread; Dinner: Grilled shrimp with steamed green beans.</p>
-                    <p><strong>Day 5:</strong> Breakfast: Whole-grain toast with almond butter; Lunch: Lentil and spinach salad; Dinner: Baked chicken breast with roasted carrots.</p>
-                    <p><strong>Day 6:</strong> Breakfast: Low-fat cottage cheese with pears; Lunch: Grilled tofu with stir-fried veggies; Dinner: Roasted turkey with mashed sweet potatoes.</p>
-                    <p><strong>Day 7:</strong> Breakfast: Smoothie with cranberries, strawberries, and almond milk; Lunch: Chickpea and avocado wrap; Dinner: Grilled salmon with sautéed kale.</p>
+                    <p><strong>Day 1:</strong></p>
+<p>Breakfast: Cranberry smoothie with spinach and banana</p>
+<p>Lunch: Grilled chicken salad with olive oil dressing</p>
+<p>Dinner: Steamed fish with broccoli</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Greek yogurt with fresh berries</p>
+<p>Lunch: Brown rice with lentil curry</p>
+<p>Dinner: Grilled turkey with roasted zucchini</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Oatmeal with flaxseeds and apples</p>
+<p>Lunch: Quinoa salad with cucumbers and tomatoes</p>
+<p>Dinner: Steamed salmon with sautéed spinach</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Smoothie with kale, orange juice, and pineapple</p>
+<p>Lunch: Vegetable soup with a slice of whole-grain bread</p>
+<p>Dinner: Grilled shrimp with steamed green beans</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Whole-grain toast with almond butter</p>
+<p>Lunch: Lentil and spinach salad</p>
+<p>Dinner: Baked chicken breast with roasted carrots</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Low-fat cottage cheese with pears</p>
+<p>Lunch: Grilled tofu with stir-fried veggies</p>
+<p>Dinner: Roasted turkey with mashed sweet potatoes</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Smoothie with cranberries, strawberries, and almond milk</p>
+<p>Lunch: Chickpea and avocado wrap</p>
+<p>Dinner: Grilled salmon with sautéed kale</p>
+
                 `;
             }
 
             if (condition === "migraine") {
                 return `
-                   <p><strong>Day 1:</strong> Breakfast: Oatmeal with fresh berries; Lunch: Grilled chicken salad with spinach; Dinner: Baked salmon with roasted sweet potatoes.</p>
-                   <p><strong>Day 2:</strong> Breakfast: Low-fat yogurt with sliced bananas; Lunch: Quinoa salad with cucumbers and olive oil dressing; Dinner: Roasted turkey with green beans.</p>
-                   <p><strong>Day 3:</strong> Breakfast: Smoothie with spinach, almond milk, and peaches; Lunch: Lentil soup with whole-grain bread; Dinner: Grilled shrimp with roasted asparagus.</p>
-                   <p><strong>Day 4:</strong> Breakfast: Whole-grain toast with avocado; Lunch: Brown rice with stir-fried veggies; Dinner: Baked cod with steamed broccoli.</p>
-                   <p><strong>Day 5:</strong> Breakfast: Cottage cheese with fresh fruit; Lunch: Chickpea and spinach salad; Dinner: Grilled chicken breast with roasted carrots.</p>
-                   <p><strong>Day 6:</strong> Breakfast: Scrambled eggs with diced tomatoes; Lunch: Vegetable soup with a side of crackers; Dinner: Steamed fish with sautéed spinach.</p>
-                   <p><strong>Day 7:</strong> Breakfast: Smoothie with kale, berries, and chia seeds; Lunch: Tuna salad with mixed greens; Dinner: Roasted salmon with sweet potatoes.</p>
+                   <p><strong>Day 1:</strong></p>
+<p>Breakfast: Oatmeal with fresh berries</p>
+<p>Lunch: Grilled chicken salad with spinach</p>
+<p>Dinner: Baked salmon with roasted sweet potatoes</p>
+
+<p><strong>Day 2:</strong></p>
+<p>Breakfast: Low-fat yogurt with sliced bananas</p>
+<p>Lunch: Quinoa salad with cucumbers and olive oil dressing</p>
+<p>Dinner: Roasted turkey with green beans</p>
+
+<p><strong>Day 3:</strong></p>
+<p>Breakfast: Smoothie with spinach, almond milk, and peaches</p>
+<p>Lunch: Lentil soup with whole-grain bread</p>
+<p>Dinner: Grilled shrimp with roasted asparagus</p>
+
+<p><strong>Day 4:</strong></p>
+<p>Breakfast: Whole-grain toast with avocado</p>
+<p>Lunch: Brown rice with stir-fried veggies</p>
+<p>Dinner: Baked cod with steamed broccoli</p>
+
+<p><strong>Day 5:</strong></p>
+<p>Breakfast: Cottage cheese with fresh fruit</p>
+<p>Lunch: Chickpea and spinach salad</p>
+<p>Dinner: Grilled chicken breast with roasted carrots</p>
+
+<p><strong>Day 6:</strong></p>
+<p>Breakfast: Scrambled eggs with diced tomatoes</p>
+<p>Lunch: Vegetable soup with a side of crackers</p>
+<p>Dinner: Steamed fish with sautéed spinach</p>
+
+<p><strong>Day 7:</strong></p>
+<p>Breakfast: Smoothie with kale, berries, and chia seeds</p>
+<p>Lunch: Tuna salad with mixed greens</p>
+<p>Dinner: Roasted salmon with sweet potatoes</p>
+
                 `;
             }
 
